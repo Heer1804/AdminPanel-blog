@@ -3,13 +3,13 @@
         <div class="page-breadcrumb">
           <div class="row">
             <div class="col-12 d-flex no-block align-items-center">
-              <h4 class="page-title">Tables</h4>
+              <h4 class="page-title">All Admins</h4>
               <div class="ms-auto text-end">
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
                     <li class="breadcrumb-item active" aria-current="page">
-                      Library
+                      Admins
                     </li>
                   </ol>
                 </nav>
@@ -22,12 +22,9 @@
           <div class="row">
             <div class="col-12">
               <div class="card">
-                <div class="card-body">
-                  <h5 class="card-title mb-0">Static Table</h5>
-                </div>
                 <table class="table">
                   <thead>
-                    <tr>
+                    <tr class="fs-4">
                       <th scope="col">Image</th>
                       <th scope="col">Name</th>
                       <th scope="col">Email</th>
@@ -42,7 +39,7 @@
                       data.map((admin,index)=>{ 
                       let {image,name,email,password,gender,hobby,id} =admin;
                     %>
-                        <tr>
+                        <tr >
                           <td>
                             <img class="rounded-circle" src="<%= image %>" alt="<%= name %>" width="75px" height="75px" />
                           </td>
@@ -52,8 +49,8 @@
                           <td><%= gender %></td>
                           <td><%= hobby %></td>
                           <td>
-                            <a href="/delete-admin/<%= id %>">Delete</a>
-                            <a href="/edit_admin/<%= id %>">Edit</a>
+                            <a href="/delete-admin/<%= id %>"><i class="far fa-trash-alt fs-4 text-dark"></i></a>
+                            <a href="/edit_admin/<%= id %>"><i class="far fa-edit fs-4 ps-2 text-dark"></i></a>
                           </td>
                         </tr>
                    <% }) %>

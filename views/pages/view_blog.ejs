@@ -3,13 +3,12 @@
         <div class="page-breadcrumb">
           <div class="row">
             <div class="col-12 d-flex no-block align-items-center">
-              <h4 class="page-title">Tables</h4>
               <div class="ms-auto text-end">
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
                     <li class="breadcrumb-item active" aria-current="page">
-                      Library
+                      Blogs
                     </li>
                   </ol>
                 </nav>
@@ -23,11 +22,11 @@
             <div class="col-12">
               <div class="card">
                 <div class="card-body">
-                  <h5 class="card-title mb-0">Static Table</h5>
+                  <h5 class="card-title mb-0 fs-3">Blogs</h5>
                 </div>
                 <table class="table">
                   <thead>
-                    <tr>
+                    <tr class="fs-4 ">
                       <th scope="col">Title</th>
                       <th scope="col">Content</th>
                       <th scope="col">Author</th>
@@ -44,8 +43,8 @@
                           <td><%= content %></td>
                           <td><%= author %></td>
                           <td>
-                            <a href="/blog/delete_blog/<%= id %>"><i class="far fa-trash-alt fs-3"></i></a>
-                            <a href="/blog/edit_blog/<%= id %>"><i class="far fa-edit fs-3 ps-2"></i></a>
+                            <a href="/blog/delete_blog/<%= id %>"><i class="far fa-trash-alt fs-4 text-dark"></i></a>
+                            <a href="/blog/edit_blog/<%= id %>"><i class="far fa-edit fs-4 ps-2 text-dark"></i></a>
                           </td>
                         </tr>
                    <% }) %>
